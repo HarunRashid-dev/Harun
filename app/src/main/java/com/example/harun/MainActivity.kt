@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +28,7 @@ fun HelloWorld() {
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ){
-        Text(text = "Hello World!", color = Color.Blue)
+        Text(text = "Hello World!", color = Color.Blue, fontSize = 40.sp)
     }
 
 }
